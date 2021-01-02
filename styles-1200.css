@@ -1,0 +1,25 @@
+  /* - - - - - - - - - - - (1200px Media Query) - - - - - - - - - - - */
+  
+  @media (min-width: 1200px) {
+    .hero {
+      overflow: hidden;
+      height: 45vw;
+    }
+
+    .hero-intro {
+      padding-top: 13%;
+    }
+
+    .hero-title {
+      letter-spacing: .85em;
+      margin-left: .7em;
+      font-size: 8.5vw;
+    }
+    
+    .card {
+        flex: 1 0 27%;
+        margin: .9em;
+        padding: 1.8em;
+        /* height: 40vw; */
+    }
+}
