@@ -4,26 +4,25 @@
         <meta charset="utf-8" />
         <title>Gradient news</title>
         <meta name="description" content="Example" />
-        <link rel = "stylesheet" type = "text/css" href = "../styles.css"/>
+        <link rel = "stylesheet" type = "text/css" href = "styles/styles.css"/>
     </head>
     <body>
-        <div class="page-grid">
-
             <!--Header -->
+        <header>
             <div class="header">
                 <a class="site-logo" href="index.html">
-                    <img class="site-logo" src="../images/logo.png">
+                    <img class="site-logo" src="images/logo.png">
                 </a>
-                <div class="site-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="../about/about.html">About</a> </li>
-                    </ul>
-                </div>
             </div>
-
+            <div class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/about.html">About</a> </li>
+                </ul>
+            </div>
+        </header>
             <!-- Main Content-->
-
+        <div class="page-grid">
              <!--Hero Area -->
              <div class="hero">
                 <div class="box">
@@ -38,24 +37,30 @@
         <!--Main Content Cards -->
             <div class="cardArea" id="content">
                     <div class="card left">
-                       <a class="card-image">
-                            <img class="img" alt="Denmark" src="../images/denmark.jpeg">
-                        </a>
+                        <figure class="card-content">
+                            <a class="card-image" href="html/post.html">
+                                <img class="img" alt="Denmark" src="images/denmark.jpeg">
+                            </a>
+                        <figcaption class="card-caption">Odense, Denmark</figcaption>
+                    </figure>
                        <a class="card-headline">
                             <h2>Vestibulum ante ipsum primis</h2>
                        </a>
                        <a class="card-body">
                            <p>Sed non neque non dolor interdum sodales sagittis in leo. Nulla facilisis ligula et facilisis posuere. Morbi semper tempus turpis, in consectetur ipsum ultrices eget.</p>
                        </a>
-                       <a class="card-open" href="../posts/post.html">
-                            <p>Read more ></p>
+                       <a class="card-open" href="html/post.html">
+                            <p><strong>Read more ></strong></p>
                        </a>
                     </div>
 
                     <div class="card center">
-                        <a class="card-image">
-                            <img class="img" alt="Portugal" src="../images/portugal.jpg">
-                        </a>
+                        <figure class="card-content">
+                            <a class="card-image" href="html/post.html">
+                                <img class="img" alt="Portugal" src="images/portugal.jpg">
+                            </a>
+                            <figcaption class="card-caption">Porto, Portugal</figcaption>
+                    </figure>
                        <a class="card-headline">
                             <h2>Vestibulum ante ipsum primis</h2>
                        </a>
@@ -63,35 +68,39 @@
                            <p>Sed non neque non dolor interdum sodales sagittis in leo. Nulla facilisis ligula et facilisis posuere. Morbi semper tempus turpis, in consectetur ipsum ultrices eget.
                         </p>
                        </a>
-                       <a class="card-open" href="../posts/post.html">
-                            <p>Read more ></p>
+                       <a class="card-open" href="html/post.html">
+                            <p><strong>Read more ></strong></p>
                        </a>
                     </div>
                     <div class="card right">
-                        <a class="card-image">
-                            <img class="img" alt="Hungary" src="../images/hungary.JPG">
-                        </a>
+                        <figure class="card-content">
+                            <a class="card-image" href="html/post.html">
+                                <img class="img" alt="Hungary" src="images/hungary.JPG">
+                            </a>
+                            <figcaption class="card-caption">Budapest, Hungary</figcaption>
+                        </figure>
                        <a class="card-headline">
                             <h2>Vestibulum ante ipsum primis</h2>
                        </a>
                        <a class="card-body">
                            <p>Sed non neque non dolor interdum sodales sagittis in leo. Nulla facilisis ligula et facilisis posuere. Morbi semper tempus turpis, in consectetur ipsum ultrices eget.</p>
                        </a>
-                       <a class="card-open" href="../posts/post.html">
-                            <p>Read more ></p>
+                       <a class="card-open" href="html/post.html">
+                            <p><strong>Read more ></strong></p>
                        </a>
                     </div>
             </div>
+        </div>
 
              <!--Footer -->
-            <div class="footer">
-                <div class="copyright">&#169 Louise Loehndorff 2020</div>
-                <div class="footer-icon">
-                    <img class="footer-img" src="../images/logo dark.png">
+            <footer>
+                <div class="footer">
+                    <div class="copyright">&#169 Louise Loehndorff 2020</div>
+                    <div class="footer-icon">
+                        <img class="footer-img" src="images/logo dark.png">
+                    </div>
+                    <div class="email">szialouise@gmail.com</div>
                 </div>
-                <div class="email">szialouise@gmail.com</div>
-            </div>
-            </div>
-        </div>
+            </footer>
     </body>
 </html>

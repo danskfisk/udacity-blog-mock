@@ -1,0 +1,61 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    grid-area: hd;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .8em .8em;
+    /* background-color: salmon; */
+}
+
+.site-logo {
+    position: relative;
+    display: block;
+    width: 4em;
+    top: .8em;
+    margin-top: .8em;
+    margin-left: .8em;
+}
+
+.site-logo img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 4em;
+}
+
+.site-nav {
+    position: relative;
+    z-index: 4000000;
+    top: .8em;
+    left: 0;
+    display: block !important;
+    float: right;
+    width: 80%;
+}
+
+.site-nav ul {
+    margin: 0;
+    text-align: right;
+}
+
+.site-nav ul li {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+    margin-top: .8em;
+    margin-right: .8em;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: white;
+}
+
+.site-nav ul li a {
+    text-decoration: none;
+    color: white;
+}

@@ -32,26 +32,83 @@
     color: black;
 }
 
+.author-info {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 1em;
+}
+
+.avatar {
+    width: 4.5em;
+}
+
+.avatar-img {
+    width: 4.5em;
+}
+
+.title {
+    color: grey;
+}
+
 .body {
     padding: 1em 0 0 0;
 }
+.social {
+    grid-area: social;
+    padding: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.social img {
+    width: 3.5em;
+    margin: .2em;
+}
 
 /* - - - - - - - - - - - (900px Media Query) - - - - - - - - - - - */
 
 @media (min-width: 900px) {
     .post-grid {
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 75%;
         grid-template-rows: auto;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         grid-template-areas:
-            "hd hd"
+            /* "hd hd" */
             "sidebar post"
             "sidebar post"
-            "ft ft";
+            "sidebar social";
+            /* "ft ft"; */
+    }
+
+    .author-info {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+        "avatar info";
+        padding-top: 1em;
+    }
+    
+    .avatar {
+        width: 3em;
+        grid-area: avatar;
+    }
+    
+    .avatar-img {
+        width: 3em;
+    }
+
+    .author-details {
+        grid-area: info;
+    }
+    
+    .title {
+        color: grey;
     }
 
     .post {
@@ -65,6 +122,15 @@
         border-top: none;
         margin: 15em 0 0 0;
         padding: 0 0 0 3em;
+    }
+
+    .social {
+        flex-flow: row wrap;
+    }
+
+    .social img {
+        width: 3em;
+        margin: .2em;
     }
 }
 /* - - - - - - - - - - - (1200px Media Query) - - - - - - - - - - - */

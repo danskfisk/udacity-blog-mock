@@ -1,0 +1,12 @@
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        /* "hd hd hd" */
+        "hero hero hero"
+        "content content content";
+        /* "ft ft ft"; */
+}
